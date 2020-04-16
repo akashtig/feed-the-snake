@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed the Snake</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <p></p>
+  <h6>Press ESC to quit</h6>
+    <main></main>
+    <article></article>
+    <section class="home">
+      <span>
+        <input type="radio" name="level" id="easy" value="easy" checked class="level">
+        <label for="easy">Easy</label>
+        <input type="radio" name="level" id="medium" value="medium" class="level">
+        <label for="medium">Medium</label>
+        <input type="radio" name="level" id="hard" value="hard" class="level">
+        <label for="hard">Hard</label>
+      </span>
+      <button id="start" >PLAY</button>
+    </section>
+    <section class="stop hide"><button  id="stop">Start Again</button></section>
+    
+    <section class="controls">
+      <button class="control-buttons" id="up" onclick="up()"><img src="./assets/arrow.png" alt="arrow-up"></button>
+      <button class="control-buttons" id="down" onclick="down()"><img src="./assets/arrow.png" alt="arrow-up"></button>
+      <button class="control-buttons" id="left" onclick="left()"><img src="./assets/arrow.png" alt="arrow-up"></button>
+      <button class="control-buttons" id="right" onclick="right()"><img src="./assets/arrow.png" alt="arrow-up"></button>
+    </section>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
