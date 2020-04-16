@@ -231,7 +231,7 @@ start_button.addEventListener('click',function(){
                 if(speed>1){
                     speed--;
                 }
-                document.querySelector('p').innerText=`Score : ${speed}`;
+                document.querySelector('p').innerText=`Score : ${score}`;
                 generate_food();
                 
                 html=html+`<div class='snake${abc}'></div>`;
