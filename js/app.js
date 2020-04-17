@@ -50,7 +50,7 @@ start_button.addEventListener('click',function(){
     let abc=0;
     let key = null;
     let speed;
-    let length = 5;
+    let length = 10;
     let score = 0;
     let initial_state = false;
     document.querySelector('p').innerText=`Score : ${score}`;
@@ -75,7 +75,7 @@ start_button.addEventListener('click',function(){
     }
 
     // builds the snake using div elements
-    for(abc ;abc<25;abc++){
+    for(abc ;abc<15;abc++){
 
         html=html+`<div class='snake${abc}'></div>`
         snake.push({x: playarea_width,y: playarea_height});
